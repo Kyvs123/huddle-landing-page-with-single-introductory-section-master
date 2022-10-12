@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-font: 'Open Sans',
+    sans-serif;
+  --heading-font: 'Poppins',
+    sans-serif;
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+
+}
+
+/* MOBILE */
+body {
+  font-family: var(--body-font);
+  background-image: url(images/bg-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--violet);
+  color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+header img {
+  width: 200px;
+}
+
+main img {
+  width: 80vw;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--heading-font);
+}
+
+main p {
+  line-height: 1.5rem;
+
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  border-radius: 30px;
+  font-family: var(--heading-font);
+  color: var(--violet);
+  border: none;
+  background: white;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+i {
+  height: 30px;
+  width: 30px;
+  padding-top: 6px;
+  border-radius: 60px;
+  border: solid white 1px;
+}
+
+/* DESKTOP */
+@media (min-width: 920px) {
+  body {
+    height: 100vh;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  main {
+    display: flex;
+    /* padding-top: 1rem; */
+    width: 100%;
+  }
+
+  main img {
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .txt {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  footer {
+    padding-top: 2rem;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  body {
+    height: auto;
+    background-size: contain;
+    padding-top: 1rem;
+
+  }
+
+  header img{
+    width: 200px;
+  }
+  main img {
+    max-width: 50%;
+    height: auto;
+
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .txt {
+    padding-left: 3rem;
+    padding-right: 8rem;
+
+}
+
+  footer {
+    height: auto;
+    padding-right: 8rem;
+    
+    
+  }
+    i {
+      height: 40px;
+      width: 40px;
+      padding-top: 6px;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      border: solid white 2px;
+    }
+}
