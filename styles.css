@@ -61,13 +61,13 @@ button {
   color: var(--violet);
   border: none;
   background: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.474);
+  cursor: pointer;
 }
 
-footer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 10px;
+button:hover{
+  color: white;
+  background-color: var(--magenta);
 }
 
 i {
@@ -76,7 +76,22 @@ i {
   padding-top: 6px;
   border-radius: 60px;
   border: solid white 1px;
+  cursor: pointer;
 }
+
+i:hover{
+  color: var(--magenta);
+  border-color: var(--magenta);
+    
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 
 /* DESKTOP */
 @media (min-width: 920px) {
@@ -122,9 +137,10 @@ i {
 @media (min-width: 1200px) {
 
   body {
-    height: auto;
+    /* height: auto; */
     background-size: contain;
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
 
   }
 
@@ -134,12 +150,13 @@ i {
   main img {
     max-width: 50%;
     height: auto;
+    margin-top: 2rem;
 
   }
 
   h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
+    font-size: 2.2rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
 
@@ -147,7 +164,13 @@ i {
   .txt {
     padding-left: 3rem;
     padding-right: 8rem;
+    
 
+}
+
+button{
+  width: 140px;
+  
 }
 
   footer {
@@ -157,11 +180,11 @@ i {
     
   }
     i {
-      height: 40px;
-      width: 40px;
-      padding-top: 6px;
+      height: 35px;
+      width: 35px;
+      padding-top: 7px;
       border-radius: 50px;
-      font-size: 1.5rem;
+      font-size: 1rem;
       border: solid white 2px;
     }
 }
